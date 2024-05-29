@@ -1,0 +1,391 @@
+/* Config Global */
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #FFFFFF;
+    background-color: #F2F2F2;
+    font-family: Inter;
+}
+
+/* Section Header */
+
+header {
+    width: 100%;
+    background-color: #0C70F2;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+    header h1 {
+        margin-left: 5%;
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60.51px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    header .flex {
+        display: flex;
+        gap: 50px;
+        margin-left: 35%;
+    }
+
+    header h2 {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 30.26px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+/* Section */    
+
+section {
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+    section div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section h2 {
+        font-family: Inter;
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60.51px;
+        text-align: left;
+        color: #1F1F1F;
+    }
+
+/* sectionForm */
+
+.sectionForm {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    margin-bottom: 100px;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+    .sectionForm div {
+    color: #1F1F1F;
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 10px 10px 30px;
+    }
+
+    .sectionForm label {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30.26px;
+    }
+
+    input {
+        background-color: #F2F2F2E5;
+        border-radius: 20px;
+        border: none;
+        width: 90%;
+        height: 20px;
+        padding: 15px;
+
+        margin-top: 20px;
+    }
+
+    ::placeholder {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .form-lat-lon div {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+    }
+
+    button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    
+        height: 50px;
+        width: 90%;
+        border: none;
+        border-radius: 15px;
+
+        background: #0C70F2E5;
+        color: #FFFFFF;
+
+        font-size: 25px;
+        font-weight: 400;
+
+        cursor: pointer;
+    }
+
+/* Section Resposta */ 
+
+.oculto {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.visivel {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: auto;
+}
+
+    #resposta {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+      
+    }
+
+    .buscaPorCep{
+        color: #1F1F1F;
+
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60.51px;
+        text-align: left;
+    }
+
+
+    .cima {
+        display: flex;
+        justify-content: space-around;
+
+        background-color: #0C70F2;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        padding: 20px;
+    }
+
+    .baixo {
+        display: flex;
+        justify-content: space-around;
+
+        background-color: #FFFFFF;
+        color: #1F1F1F;
+
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        padding: 20px;
+    }
+
+/* section-finaly */
+
+.section-finaly {
+    margin-top: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+    .div{
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60.51px;
+        color: #1F1F1F;
+        display: flex;
+        gap: 10px;
+    }
+
+    #resposta-previsao-do-tempo{
+        justify-content: center;
+
+        border-radius: 20px;
+        padding: 10px;
+
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 24.2px;
+
+        background-color: #FFFFFF;
+        color: #1F1F1F;
+
+        margin-bottom: 100px;
+    }
+
+/* Footer */
+footer {
+    background-color: #0C70F2;
+    height: 95px
+}    
+
+footer div {
+    text-align: right;
+    margin-right: 3%;
+    padding-top: 40px;
+}
+
+a {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30.26px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:first-of-type{
+    border-right: 2px solid #FFFFFF;
+    padding-right: 10px;
+    margin-right: 5px;
+}    
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+    header {
+        height: 120px;
+        grid-template-columns: 35% 65%;
+        align-items: center;
+    }
+    
+        header h1 {
+            margin-left: 10%;
+            font-size: 20px;
+            line-height: 20.51px;
+            text-align: left;
+            cursor: pointer;
+        }
+    
+        header .flex {
+            display: flex;
+            gap: 10px;
+            margin-left: 15%;
+        }
+    
+        header h2 {
+            font-size: 11px;
+            line-height: 10.26px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+    /* Section */    
+
+    section {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+    
+        .sectionDescription div img {
+            width: 80px;
+        }
+        
+        section h2 {
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 25.51px;
+        }    
+
+/* Section Form */
+    
+    .sectionForm {
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+        .sectionForm div {
+            padding: 10px 10px 10px 10px;
+        }
+
+        .sectionForm label {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 10.26px;
+        }
+
+        input {
+            height: 10px;
+        }
+
+        .form-lat-lon label {
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        button {
+           margin-top: 30px;
+           margin-bottom: 30px;
+           width: 100%;
+        }
+
+    /* Section Resposta */
+    #resposta {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+      
+    }
+
+        .buscaPorCep{
+            color: #1F1F1F;
+
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .buscaPorCep img {
+            width: 50px;
+        }
+
+    
+        .cima {
+            font-size: 10px;
+            gap: 5px;
+    
+            padding: 7px;
+        }
+    
+        .baixo {
+            font-size: 10px;
+            padding: 7px;
+        }
+    /* section-finaly */
+    
+    .section-finaly{
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+        .div {
+            font-size: 13px;
+        }
+
+        .div img {
+            width: 50px;
+        }
+
+        #resposta-previsao-do-tempo{
+            font-size: 10px;
+        }
+    
+    /* Footer */
+    
+    footer a {
+        font-size: 10px;
+    }
+}
