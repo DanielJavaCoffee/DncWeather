@@ -18,7 +18,7 @@ O projeto DncWeather permite que os usuários obtenham previsões meteorológica
 
 ## Links
 
-- [Link do projeto no GitHub](https://github.com/usuario/dncweather)
+- [Link do projeto no GitHub](https://danieljavacoffee.github.io/DncWeather/)
 
 ## Licença
 
